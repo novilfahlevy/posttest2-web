@@ -1,0 +1,162 @@
+:root {
+  --text-color: #8A8A8A;
+  --text-color-hovered: #dcdcdc;
+  --border-color: #242424;
+  --background-color: #161616;
+}
+
+::selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: url("../assets/BG.svg");
+  background-attachment: fixed;
+}
+
+body * {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 30px 50px;
+  border-bottom: 1.4px solid var(--border-color);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.navbar .navbar-mailme a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-mailme a * {
+  transition: color 0.2222s;
+}
+
+.navbar .navbar-mailme a:hover * {
+  color: var(--text-color-hovered);
+}
+
+.navbar .navbar-mailme a i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: var(--text-color)
+}
+
+.navbar .navbar-mailme a span {
+  font-size: 16px;
+}
+
+.navbar .navbar-social-media ul {
+  list-style-type: none;
+}
+
+.navbar .navbar-social-media ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.navbar .navbar-social-media ul li:not(:last-child)::after {
+  content: '/';
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+.navbar .navbar-social-media ul li a {
+  transition: color 0.2222s;
+}
+
+.navbar .navbar-social-media ul li a:hover {
+  color: var(--text-color-hovered);
+}
+
+/* Navbar End */
+
+/* Main */
+
+main {
+  margin-top: 100px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+main p {
+  text-align: center;
+  font-size: 56px;
+  color: var(--text-color);
+  margin-bottom: 130px;
+}
+
+main ul.pages {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+main ul.pages li:not(:last-child) {
+  margin-right: 100px;
+}
+
+main ul.pages li a {
+  border: 1.4px solid var(--text-color);
+  padding: 20px 50px;
+  border-radius: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color, border-color 0.2222s;
+}
+
+main ul.pages li a:hover {
+  color: var(--text-color-hovered);
+  border-color: var(--text-color-hovered);
+}
+
+/* Main End */
+
+/* Footer */
+
+footer {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 30px 50px;
+  border-top: 1.4px solid var(--border-color);
+}
+
+footer p {
+  color: var(--text-color);
+}
+
+/* Footer End */
