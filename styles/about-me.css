@@ -21,22 +21,6 @@ main {
   margin-bottom: 20px;
 }
 
-.card {
-  background-color: var(--card-color);
-  border: 1.4px solid var(--border-color);
-  padding: 20px;
-}
-
-.card h2.card-title {
-  color: var(--text-color);
-  margin-bottom: 10px;
-  font-weight: normal;
-}
-
-.card p {
-  color: var(--text-color);
-}
-
 .educations {
   list-style-type: square;
   color: var(--text-color);
