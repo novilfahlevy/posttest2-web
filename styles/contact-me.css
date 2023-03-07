@@ -1,0 +1,76 @@
+main {
+  width: 70%;
+  box-sizing: border-box;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group p.form-description {
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group input[type=file],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--card-color);
+  border: 1.4px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: auto;
+}
+
+.form-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-radio label {
+  color: var(--text-color);
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.form-group input[type=radio],
+.form-group input[type=checkbox] {
+  cursor: pointer;
+}
+
+.form-group input[type=radio]:not(:last-child),
+.form-group input[type=checkbox]:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: var(--background-color);
+  border: 1.4px solid var(--border-color);
+  padding: 10px 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.button:hover {
+  color: var(--text-color-hovered);
+}
