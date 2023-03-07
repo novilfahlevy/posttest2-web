@@ -1,107 +1,22 @@
-:root {
-  --text-color: #8A8A8A;
-  --text-color-hovered: #dcdcdc;
-  --border-color: #242424;
-  --background-color: #161616;
-}
-
-::selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: var(--background-color);
-  background-image: url("../assets/BG.svg");
-  background-attachment: fixed;
-}
-
-body * {
-  font-family: "Outfit", sans-serif;
-}
-
 .container {
   min-height: 100vh;
 }
-
-/* Navbar */
-
-.navbar {
-  width: 70%;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 30px 50px;
-  border-bottom: 1.4px solid var(--border-color);
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.navbar .navbar-mailme a {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .navbar-mailme a * {
-  transition: color 0.2222s;
-}
-
-.navbar .navbar-mailme a:hover * {
-  color: var(--text-color-hovered);
-}
-
-.navbar .navbar-mailme a i {
-  margin-right: 10px;
-  font-size: 24px;
-  color: var(--text-color)
-}
-
-.navbar .navbar-mailme a span {
-  font-size: 16px;
-}
-
-.navbar .navbar-social-media ul {
-  list-style-type: none;
-}
-
-.navbar .navbar-social-media ul li:not(:last-child) {
-  margin-right: 10px;
-}
-
-.navbar .navbar-social-media ul li:not(:last-child)::after {
-  content: '/';
-  margin-left: 10px;
-  color: var(--text-color);
-}
-
-.navbar .navbar-social-media ul li a {
-  transition: color 0.2222s;
-}
-
-.navbar .navbar-social-media ul li a:hover {
-  color: var(--text-color-hovered);
-}
-
-/* Navbar End */
 
 /* Main */
 
 main {
   margin-top: 100px;
+}
+
+main .avatar {
+  width: 100px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 8px;
+  border: 2.4px solid var(--border-color);
+  background-color: var(--card-color);
 }
 
 main h1 {
@@ -143,20 +58,3 @@ main ul.pages li a:hover {
 }
 
 /* Main End */
-
-/* Footer */
-
-footer {
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 30px 50px;
-  border-top: 1.4px solid var(--border-color);
-}
-
-footer p {
-  color: var(--text-color);
-}
-
-/* Footer End */
