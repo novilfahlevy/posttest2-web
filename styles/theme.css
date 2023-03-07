@@ -71,25 +71,25 @@ body * {
   font-size: 16px;
 }
 
-.navbar .navbar-social-media ul {
+.navbar .navbar-menu ul {
   list-style-type: none;
 }
 
-.navbar .navbar-social-media ul li:not(:last-child) {
+.navbar .navbar-menu ul li:not(:last-child) {
   margin-right: 10px;
 }
 
-.navbar .navbar-social-media ul li:not(:last-child)::after {
+.navbar .navbar-menu ul li:not(:last-child)::after {
   content: '/';
   margin-left: 10px;
   color: var(--text-color);
 }
 
-.navbar .navbar-social-media ul li a {
+.navbar .navbar-menu ul li a {
   transition: color 0.2222s;
 }
 
-.navbar .navbar-social-media ul li a:hover {
+.navbar .navbar-menu ul li a:hover {
   color: var(--text-color-hovered);
 }
 
@@ -104,10 +104,38 @@ footer {
   box-sizing: border-box;
   padding: 30px 50px;
   border-top: 1.4px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer p {
   color: var(--text-color);
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer ul li:not(:last-child)::after {
+  content: '/';
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2222s;
+}
+
+footer ul li a:hover {
+  color: var(--text-color-hovered);
 }
 
 /* Footer End */
