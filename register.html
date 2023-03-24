@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Novil Fahlevy's Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles/theme.css">
+  <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li class="navbar-mailme">
+          <a href="mailto:novilfreon@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>Mail me</span>
+          </a>
+        </li>
+        <li class="navbar-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="portfolios.html">Portfolios</a></li>
+            <li><a href="contact-me.html">Contact me</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <main>
+      <form id="registerForm">
+        <div class="card">
+          <h2 class="card-title">
+            Create new set of key and PIN
+          </h2>
+          <div class="form-group">
+            <label for="key">Key</label>
+            <input type="text" name="key" autocomplete="off" required>
+          </div>
+          <div class="form-group">
+            <label for="pin">PIN</label>
+            <div class="input-group">
+              <input type="password" name="pin" autocomplete="off" required>
+              <span class="input-group-text" id="showPINToggle">
+                <i class="fas fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="button">Create</button>
+        </div>
+      </form>
+    </main>
+    <!-- End Main -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with <span style="color: red;">&#10084;</span> by <b>Muhammad Novil Fahlevy</b></p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/novil-fahlevy-46a38116a">Linkedin</a></li>
+      <li><a href="https://www.instagram.com/novilfahlevy">Instagram</a></li>
+      <li><a href="https://www.github.com/novilfahlevy">Github</a></li>
+    </ul>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="scripts/register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+main {
+  width: 70%;
+  box-sizing: border-box;
+  margin: 50px auto;
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.messages .card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.messages .card p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.messages .card .days {
+  list-style-type: square;
+  color: var(--text-color);
+  margin-left: 20px;
+}
+
+.no-message {
+  color: var(--text-color);
+}

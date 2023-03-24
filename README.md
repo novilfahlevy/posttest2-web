@@ -14,3 +14,12 @@ Halaman ini berisi project-project yang pernah saya kerjakan sebelumnya.
 
 ## Contact me
 Halaman ini berisi form yang digunakan untuk berkomunikasi dengan saya, bisa untuk tujuan project, tawaran pekerjaan, dan lain-lain.
+
+## Register
+Halaman ini berisi form untuk membuat keyset (terdiri dari key dan PIN) untuk login.
+
+## Login
+Halaman ini berisi form untuk login dengan menggunakan keyset (key dan PIN) yang sudah didaftarkan di halaman register
+
+## Messages
+Halaman ini berisi data-data pesan atau <i>messages</i> dari halaman Contact Me.
