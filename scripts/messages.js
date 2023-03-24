@@ -1,6 +1,6 @@
 const messagesContainer = document.getElementById('messages')
-const messages = localStorage.getItem('messages')
-  ? JSON.parse(localStorage.getItem('messages'))
+const messages = sessionStorage.getItem('messages')
+  ? JSON.parse(sessionStorage.getItem('messages'))
   : []
 
 if (messages.length) {

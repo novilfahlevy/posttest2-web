@@ -36,8 +36,8 @@ contactMeForm.addEventListener('submit', event => {
   const message = document.querySelector('textarea[name=message]')
   const days = Array.from(document.querySelectorAll('input[name=days]:checked')).map(day => day.value)
 
-  const messages = localStorage.getItem('messages')
-    ? JSON.parse(localStorage.getItem('messages'))
+  const messages = sessionStorage.getItem('messages')
+    ? JSON.parse(sessionStorage.getItem('messages'))
     : []
 
   const newMessage = {
@@ -49,7 +49,7 @@ contactMeForm.addEventListener('submit', event => {
     days
   }
   const newMessages = [newMessage, ...messages]
-  localStorage.setItem('messages', JSON.stringify(newMessages))
+  sessionStorage.setItem('messages', JSON.stringify(newMessages))
 
   window.location.reload()
 

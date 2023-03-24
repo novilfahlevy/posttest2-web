@@ -15,8 +15,12 @@ Halaman ini berisi project-project yang pernah saya kerjakan sebelumnya.
 ## Contact me
 Halaman ini berisi form yang digunakan untuk berkomunikasi dengan saya, bisa untuk tujuan project, tawaran pekerjaan, dan lain-lain.
 
+[![Screenshot-2023-03-24-181727.png](https://i.postimg.cc/hPYhVwvF/Screenshot-2023-03-24-181727.png)](https://postimg.cc/BXxq0m2N)
+
 ## Register
 Halaman ini berisi form untuk membuat keyset (terdiri dari key dan PIN) untuk login.
+
+[![Screenshot-2023-03-24-181836.png](https://i.postimg.cc/vZ3yWx34/Screenshot-2023-03-24-181836.png)](https://postimg.cc/K1kCbjXb)
 
 ## Login
 Halaman ini berisi form untuk login dengan menggunakan keyset (key dan PIN) yang sudah didaftarkan di halaman register
