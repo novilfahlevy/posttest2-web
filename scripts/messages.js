@@ -1,3 +1,17 @@
+const keysets = localStorage.getItem('keysets')
+  ? JSON.parse(localStorage.getItem('keysets'))
+  : []
+const loggedInKey = document.getElementById('loggedInKey')
+const loggedInKeyIndex = localStorage.getItem('key-logged-in-index')
+
+// Check user is logged in
+if (loggedInKeyIndex && keysets[loggedInKeyIndex]) {
+  loggedInKey.textContent = keysets[loggedInKeyIndex].key
+} else {
+  window.location.href = 'login.html'
+  alert('You are not authrized to enter this page')
+}
+
 const messagesContainer = document.getElementById('messages')
 const messages = sessionStorage.getItem('messages')
   ? JSON.parse(sessionStorage.getItem('messages'))
@@ -26,3 +40,8 @@ if (messages.length) {
 } else {
   messagesContainer.innerHTML = '<p class="no-message">There is no message yet</p>'
 }
+
+document.getElementById('logout').addEventListener('click', () => {
+  localStorage.removeItem('key-logged-in-index')
+  window.location.href = 'login.html'
+})

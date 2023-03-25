@@ -9,8 +9,9 @@ loginForm.addEventListener('submit', event => {
     ? JSON.parse(localStorage.getItem('keysets'))
     : []
   
-  const isKeysetMatches = keysets.some(keyset => keyset.key == key.value && keyset.pin == pin.value)
-  if (isKeysetMatches) {
+  const keysetIndex = keysets.findIndex(keyset => keyset.key == key.value && keyset.pin == pin.value)
+  if (keysetIndex >= 0) {
+    localStorage.setItem('key-logged-in-index', keysetIndex)
     window.location.href = 'messages.html'
   } else {
     alert('Keyset does not match any record')

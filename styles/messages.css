@@ -4,6 +4,30 @@ main {
   margin: 50px auto;
 }
 
+.logged-in-keyset {
+  display: flex;
+  gap: 20px;
+}
+
+.logged-in-keyset p {
+  color: var(--text-color);
+  position: relative;
+}
+
+.logged-in-keyset p::after {
+  content: '|';
+  position: absolute;
+  left: calc(100% + 7px);
+}
+
+.logged-in-keyset #logout {
+  transition: color 0.2222s;
+}
+
+.logged-in-keyset #logout:hover {
+  color: var(--text-color-hovered);
+}
+
 h1 {
   color: var(--text-color);
   margin-bottom: 20px;
