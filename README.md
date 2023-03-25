@@ -3,6 +3,8 @@ Nama  : Muhammad Novil Fahlevy <br>
 NIM   : 2109116095 <br>
 Kelas : SI C 2021
 
+Demo: https://posttest2-web.vercel.app
+
 ## Home
 Halaman ini berisi foto profil dan pengenalan singkat tentang saya.
 

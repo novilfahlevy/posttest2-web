@@ -18,7 +18,7 @@ registerForm.addEventListener('submit', event => {
   const newKeysets = [{ key: key.value, pin: pin.value }, ...keysets]
   localStorage.setItem('keysets', JSON.stringify(newKeysets))
 
-  window.location.reload()
+  window.location.href = 'login.html'
 
   // Ini ceritanya aja
   alert('Keyset has already sent to the email')
